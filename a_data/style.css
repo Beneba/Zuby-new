@@ -251,14 +251,14 @@ fieldset {
 
 .carousel-inner>.item>img{
     display: block;
-    max-width: none;
+    max-width: 100%;
     height: 100%;
 }
 
 .carousel-inner .item .overlay{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 120%;
     z-index: 2;
     background-color: #22272d99;
     opacity: 0.8;
@@ -416,7 +416,7 @@ fieldset {
 * 03. About area css
 * -------------------------------------------------------------------------------------- */
 .about-text{
-    margin-top: 75px;
+    margin-top: -40px;
 }
 
 .about-text h2{
