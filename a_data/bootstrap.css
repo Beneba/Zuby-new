@@ -436,6 +436,7 @@ fieldset {
 .specialize{
     width: 90%;
     margin-right: 10%;
+    margin-top: -50px;
 }
 
 .specialize h2 {
@@ -449,7 +450,8 @@ fieldset {
 }
 
 .specialize-boxes-row{
-    width: 100%;    
+    width: 100%;  
+    
 }
 
 .specialize-boxes-row ul{
@@ -461,7 +463,7 @@ fieldset {
     width: auto;
     list-style: none;
     float: left;
-    margin-top: 50px;    
+        
 }
 
 .pad1{
@@ -669,11 +671,13 @@ blockquote p {
 /* ----------------------------------------------------------------------------------------
 * 07. Lattest news css
 * ---------------------------------------------------------------------------------------*/
-
+.project-images{
+   height: 235px;
+}
 .post-img{      
     position: relative;    
     width: 100% ;   
-    height: 100%;
+    height: auto
 }
 
 .post-date{
