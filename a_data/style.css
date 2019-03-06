@@ -467,7 +467,7 @@ fieldset {
 }
 
 .pad1{
-    margin-left: 30px;    
+    margin-left: -10px;    
 }
 
 .specialize-boxes-row li p{
@@ -762,7 +762,7 @@ blockquote p {
     background-color: #232425;
     width: 100%;
     height: auto;    
-    padding: 78px 0px 60px 100px;
+    padding: 45px 0px 22px 100px;
 }
 
 .contact-form h2{
