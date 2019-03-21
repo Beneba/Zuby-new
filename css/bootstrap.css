@@ -1,41 +1,7 @@
 /* ----------------------------------------------------------------------------------------
-* Author        : 1W Media
-* Template Name : Orator HTML Template 
+* Author        : Afetsi Bless
 * Version       : 1.0     
 * ---------------------------------------------------------------------------------------- */ 
-
-
-/* ----------------------------------------------------------------------------------------
-01. Reset css
-
-02. Header area css - Navigation  and Slider
-
-03. About area css
-
-04. Topics area css
-
-05. Works area css
-
-06. Testimonials  css
-
-07. Lattest news css
-
-08. Contact area css
-
-09. Footer area css
-
-10. Blog Page Styles
-
-11. Sidebar styling
-
-* -------------------------------------------------------------------------------------- */
-
-
-
-
-/* ----------------------------------------------------------------------------------------
-* 01. Reset css
-* -------------------------------------------------------------------------------------- */
 
 html,
 body {
@@ -110,7 +76,7 @@ fieldset {
 
 /* All Section Padding */
 .section {
-    padding: 100px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
 }
 
 .title-area{
@@ -251,17 +217,16 @@ fieldset {
 
 .carousel-inner>.item>img{
     display: block;
-    max-width: 100%;
-    height: 100%;
-
+    max-width: none;
+    height: 100vh;
 }
 
 .carousel-inner .item .overlay{
     position: absolute;
     width: 100%;
-    height: 209%;
+    height: 100%;
     z-index: 2;
-    background-color: #22272d99;
+    background-color: #22272d;
     opacity: 0.8;
 }
 
@@ -273,10 +238,9 @@ fieldset {
 .carousel-caption h3{
     padding:0;  
     display: inline-block;
-    line-height: 72px;    
+    line-height: 62px;    
     font-family: 'Slabo 27px', sans-serif;
-    font-size: 60px;  
-    
+    font-size: 60px;    
 }
 
 .btn {
@@ -417,7 +381,7 @@ fieldset {
 * 03. About area css
 * -------------------------------------------------------------------------------------- */
 .about-text{
-    margin-top: -40px;
+    margin-top: 75px;
 }
 
 .about-text h2{
@@ -438,6 +402,7 @@ fieldset {
 .specialize{
     width: 90%;
     margin-right: 10%;
+    margin-top: -50px;
 }
 
 .specialize h2 {
@@ -451,7 +416,8 @@ fieldset {
 }
 
 .specialize-boxes-row{
-    width: 100%;    
+    width: 100%;  
+    
 }
 
 .specialize-boxes-row ul{
@@ -463,11 +429,11 @@ fieldset {
     width: auto;
     list-style: none;
     float: left;
-    margin-top: 50px;    
+        
 }
 
 .pad1{
-    margin-left: -10px;    
+    margin-left: 30px;    
 }
 
 .specialize-boxes-row li p{
@@ -492,13 +458,6 @@ fieldset {
 .service-box{
     width: 100%
 }
-/* .service-box img {
-    margin-left: 30px;
-    width: 50%;
-    height: 20%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
 
 .service-icon{
     color: #49494a;
@@ -678,11 +637,13 @@ blockquote p {
 /* ----------------------------------------------------------------------------------------
 * 07. Lattest news css
 * ---------------------------------------------------------------------------------------*/
-
+.project-images{
+   height: 235px;
+}
 .post-img{      
     position: relative;    
     width: 100% ;   
-    height: 100%;
+    height: auto
 }
 
 .post-date{
@@ -762,7 +723,7 @@ blockquote p {
     background-color: #232425;
     width: 100%;
     height: auto;    
-    padding: 45px 0px 22px 100px;
+    padding: 78px 0px 60px 100px;
 }
 
 .contact-form h2{
@@ -1519,19 +1480,33 @@ input[type="color"]:focus,
     border: 2px solid #1e1e1e;
 }
 
+/* ----------------------------------------------------------------------------------------
+* mobile responsive view
+* -------------------------------------------------------------------------------------- */
 
+@media screen and (max-width: 380px ){
 
+    /* .navbar-header{
+        margin-top: -55px;
+        margin-left:-10px;
+        margin-right: -10px;
 
+    }  
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 8px 9px;
+        margin-top: 53px;
+        margin-right: 6px;
+        margin-bottom: -49px; */
 
+    .carousel-caption h3{
+        font-size: 20px;
+        line-height: 40px;
+        height: 80vh;
 
-
-
-
-
-
-
-
-
-
-
-
+    }
+    #about{
+        margin-top: 50px;
+    }
+}

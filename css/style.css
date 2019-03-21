@@ -1,41 +1,4 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : 1W Media
-* Template Name : Orator HTML Template 
-* Version       : 1.0     
-* ---------------------------------------------------------------------------------------- */ 
-
-
-/* ----------------------------------------------------------------------------------------
-01. Reset css
-
-02. Header area css - Navigation  and Slider
-
-03. About area css
-
-04. Topics area css
-
-05. Works area css
-
-06. Testimonials  css
-
-07. Lattest news css
-
-08. Contact area css
-
-09. Footer area css
-
-10. Blog Page Styles
-
-11. Sidebar styling
-
-* -------------------------------------------------------------------------------------- */
-
-
-
-
-/* ----------------------------------------------------------------------------------------
-* 01. Reset css
-* -------------------------------------------------------------------------------------- */
+/* Author: AFETSI BLESS */
 
 html,
 body {
@@ -110,7 +73,7 @@ fieldset {
 
 /* All Section Padding */
 .section {
-    padding: 150px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 .title-area{
@@ -137,7 +100,16 @@ fieldset {
     padding-top: 7px;
     margin-top: 0px; 
 }
-
+.media-title h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 21px;
+    color: #1c1c1c;
+    padding-top: 7px;
+    margin-top: 0px; 
+}
 .title-desc {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -180,7 +152,7 @@ fieldset {
     font-size: 24px;
     font-weight: 500;
     font-family: 'Myriad Pro', 'open sans', sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* ----------------------------------------------------------------------------------------
@@ -251,16 +223,17 @@ fieldset {
 
 .carousel-inner>.item>img{
     display: block;
-    max-width: none;
+    max-width: 100%;
     height: 100%;
+
 }
 
 .carousel-inner .item .overlay{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 209%;
     z-index: 2;
-    background-color: #22272d;
+    background-color: #22272d99;
     opacity: 0.8;
 }
 
@@ -274,7 +247,8 @@ fieldset {
     display: inline-block;
     line-height: 72px;    
     font-family: 'Slabo 27px', sans-serif;
-    font-size: 60px;    
+    font-size: 60px;  
+    
 }
 
 .btn {
@@ -415,7 +389,7 @@ fieldset {
 * 03. About area css
 * -------------------------------------------------------------------------------------- */
 .about-text{
-    margin-top: 75px;
+    margin-top: -40px;
 }
 
 .about-text h2{
@@ -436,7 +410,6 @@ fieldset {
 .specialize{
     width: 90%;
     margin-right: 10%;
-    margin-top: -50px;
 }
 
 .specialize h2 {
@@ -450,8 +423,7 @@ fieldset {
 }
 
 .specialize-boxes-row{
-    width: 100%;  
-    
+    width: 100%;    
 }
 
 .specialize-boxes-row ul{
@@ -463,11 +435,11 @@ fieldset {
     width: auto;
     list-style: none;
     float: left;
-        
+    margin-top: 50px;    
 }
 
 .pad1{
-    margin-left: 30px;    
+    margin-left: -10px;    
 }
 
 .specialize-boxes-row li p{
@@ -488,10 +460,28 @@ fieldset {
 /* ----------------------------------------------------------------------------------------
 * 04. Topics area css
 * -------------------------------------------------------------------------------------- */
-
+ /* .services-list{
+    position: relative;
+    width: 100%;
+    margin: 50px auto 0;
+        margin-left: auto;
+    margin-left: 110px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 5px;
+}  */
 .service-box{
     width: 100%
 }
+/* .service-box img {
+    margin-left: 30px;
+    width: 50%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
 
 .service-icon{
     color: #49494a;
@@ -523,11 +513,6 @@ fieldset {
     color: #6e6e6e;
     margin-bottom: 0px; 
 }
-
-
-
-
-
 
 /* ----------------------------------------------------------------------------------------
 * 05. Youtube portfolio area css
@@ -562,9 +547,6 @@ fieldset {
         height: 275px;
         margin-left: 0px;
     }
-
-
-
 /* ----------------------------------------------------------------------------------------
 * 06. Testimonials area css
 * ---------------------------------------------------------------------------------------*/
@@ -588,7 +570,7 @@ fieldset {
   opacity: 0;
   -webkit-transition-property: opacity;
       -ms-transition-property: opacity;
-          transition-property: opacity;
+        transition-property: opacity;
 }
 
 #fade-quote-carousel.carousel .carousel-inner .active {
@@ -630,7 +612,6 @@ fieldset {
     border-radius: 10px;
 }
 
-
 blockquote p {
     padding: 10px 20px;
     margin: 0 0 20px;   
@@ -671,13 +652,11 @@ blockquote p {
 /* ----------------------------------------------------------------------------------------
 * 07. Lattest news css
 * ---------------------------------------------------------------------------------------*/
-.project-images{
-   height: 235px;
-}
+
 .post-img{      
     position: relative;    
     width: 100% ;   
-    height: auto
+    height: 100%;
 }
 
 .post-date{
@@ -730,7 +709,7 @@ blockquote p {
 }
 
 
-/* ----------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
 * 08. Map with Contact form css
 * ---------------------------------------------------------------------------------------*/
 
@@ -757,7 +736,7 @@ blockquote p {
     background-color: #232425;
     width: 100%;
     height: auto;    
-    padding: 78px 0px 60px 100px;
+    padding: 45px 0px 22px 100px;
 }
 
 .contact-form h2{
@@ -1516,15 +1495,62 @@ input[type="color"]:focus,
 
 
 
+@media screen and (max-width: 700px) {
+	/* .icons{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: auto 1fr auto;
+        display: grid;
+        grid-gap: 30
+    } */
+    
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+.about-text{
+    margin-top: 4px;
+    font-size: 26px
+}
+
+.post-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -199px;
+}
+.project-title{
+    margin-bottom:250px;
+    border-left: 4px solid #333333;
+    padding-left: 15px;
+}
+.footer-area h2{
+    font-size: 26px;
+}
+.contact-form h2{
+    font-size: 27px;
+    line-height: 2
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 15px;
+}
+ #services > .section-media{
+    margin-top: 225px;
+}
+}
 
 
-
-
-
-
-
-
-
+@media screen and (max-width: 988px) {
+    .section-media{
+        margin-top: 270px;
+    }
+    .about-text{
+        margin-top: 4px;
+        font-size: 28px
+}
 
 
 
